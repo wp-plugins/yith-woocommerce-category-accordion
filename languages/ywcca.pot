@@ -1,0 +1,96 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Category Accordion\n"
+"POT-Creation-Date: 2015-06-18 16:52+0100\n"
+"PO-Revision-Date: 2015-06-18 16:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: Yithemes <plugins@yithemes.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.11\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;_ngettext_noop:1,2;"
+"_n_nooop:1,2;_c,_nc:4c,1,2;_x:1,2c\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../plugin-fw\n"
+
+#: ../includes/class.yith-category-accordion-widget.php:13
+msgid "YITH WooCommerce Category Accordion"
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:14
+msgid "Show your categories in an accordion!"
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:74
+msgid "Title"
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:75
+msgid "Insert a title for the accordion menu"
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:78
+msgid "Show WooCommerce Categories\""
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:82
+#: ../plugin-options/settings-options.php:42
+msgid "Show WooCommerce Subcategories"
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:86
+msgid "Show WordPress Categories\""
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:90
+#: ../plugin-options/settings-options.php:50
+msgid "Show WordPress Subcategories"
+msgstr ""
+
+#: ../includes/class.yith-category-accordion-widget.php:94
+#: ../plugin-options/settings-options.php:33
+msgid "Highlight the current category"
+msgstr ""
+
+#: ../includes/class.yith-woocommerce-category-accordion.php:70
+#: ../includes/class.yith-woocommerce-category-accordion.php:146
+msgid "Settings"
+msgstr ""
+
+#: ../includes/class.yith-woocommerce-category-accordion.php:98
+msgid "Plugin Documentation"
+msgstr ""
+
+#: ../includes/class.yith-woocommerce-category-accordion.php:161
+#: ../includes/class.yith-woocommerce-category-accordion.php:162
+msgid "Category Accordion"
+msgstr ""
+
+#: ../init.php:47
+msgid ""
+"YITH WooCommerce Category Accordion  is enabled but not effective. It "
+"requires Woocommerce in order to work."
+msgstr ""
+
+#: ../init.php:62
+msgid ""
+"You can't activate the free version of YITH WooCommerce Category Accordion "
+"while you are using the premium one."
+msgstr ""
+
+#: ../plugin-options/settings-options.php:10
+msgid "General settings"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:16
+msgid "Show WooCommerce categories in the accordion"
+msgstr ""
+
+#: ../plugin-options/settings-options.php:24
+msgid "Show WordPress categories in accordion"
+msgstr ""
