@@ -4,7 +4,7 @@ Contributors: yithemes
 Tags: woocommerce, ecommerce, product categories, wordpress categories, accordion, widget,shop, yith, yit, yithemes
 Requires at least: 3.5.1
 Tested up to: 4.2.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,9 +25,8 @@ The freedom to explore and track all the categories you need with at a glance: Y
 * Show WordPress subcategories
 
 == Screenshots ==
-1. Admin: general settings
-2. Admin: widget settings
-3. Frontend: accordion in your page
+1. Admin: widget settings
+2. Frontend: accordion in your page
 
 
 = Installation =
@@ -43,9 +42,13 @@ You will be able to add your accordion(s) in your sidebar thanks to a useful wid
 
 1. Unzip the downloaded zip file.
 2. Upload the plugin folder into the `wp-content/plugins/` directory of your WordPress site.
-3. Activate `YITH WooCommerce Product Slider Carousel` from Plugins page
+3. Activate `YITH WooCommerce Category Accordion` from Plugins page
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Fixed minor bug
 
 = 1.0.0 =
 

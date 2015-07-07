@@ -10,8 +10,8 @@ if( ! class_exists( 'YITH_WC_Category_Accordion' ) ){
         protected static $_instance  =   null;
         protected $_panel   =   null;
         protected $_panel_page    =   'yith_wc_category_accordion';
-        protected $_official_documentation='';
-        protected $_premium_landing_url = 'http://yithemes.com/themes/plugins/yith-woocommerce-category_accordion/';
+        protected $_official_documentation='https://yithemes.com/docs-plugins/yith-woocommerce-category-accordion';
+        protected $_premium_landing_url = 'https://yithemes.com/themes/plugins/yith-woocommerce-category-accordion';
         protected $_premium =   'premium.php';
 
 
@@ -23,7 +23,7 @@ if( ! class_exists( 'YITH_WC_Category_Accordion' ) ){
             //Add row meta
             add_filter( 'plugin_row_meta', array( $this, 'plugin_row_meta' ), 10, 4 );
             //Add menu field under YITH_PLUGIN
-           // add_action( 'yith_wc_category_accordion_premium', array( $this, 'premium_tab' ) );
+            add_action( 'yith_wc_category_accordion_premium', array( $this, 'premium_tab' ) );
             add_action( 'admin_menu', array( $this, 'add_category_accordion_menu' ),5 );
 
             //register widget
@@ -69,9 +69,9 @@ if( ! class_exists( 'YITH_WC_Category_Accordion' ) ){
 
             $links[] = '<a href="' . admin_url( "admin.php?page={$this->_panel_page}" ) . '">' . __( 'Settings', 'ywcca' ) . '</a>';
 
-         /*   if ( defined( 'YWCCA_FREE_INIT' ) ) {
+            if ( defined( 'YWCCA_FREE_INIT' ) ) {
                 $links[] = '<a href="' . $this->get_premium_landing_uri() . '" target="_blank">' . __( 'Premium Version', 'ywcca' ) . '</a>';
-            }*/
+            }
 
             return $links;
         }
@@ -95,7 +95,7 @@ if( ! class_exists( 'YITH_WC_Category_Accordion' ) ){
                 ( defined( 'YWCCA_FREE_INIT' ) && ( YWCCA_FREE_INIT == $plugin_file ) )
             ) {
 
-             //   $plugin_meta[] = '<a href="' . $this->_official_documentation . '" target="_blank">' . __( 'Plugin Documentation', 'ywcca' ) . '</a>';
+               $plugin_meta[] = '<a href="' . $this->_official_documentation . '" target="_blank">' . __( 'Plugin Documentation', 'ywcca' ) . '</a>';
             }
 
             return $plugin_meta;
@@ -109,7 +109,7 @@ if( ! class_exists( 'YITH_WC_Category_Accordion' ) ){
          * @return  string The premium landing link
          */
         public function get_premium_landing_uri(){
-            return defined( 'YITH_REFER_ID' ) ? $this->_premium_landing_url . '?refer_id=' . YITH_REFER_ID : $this->_premium_landing_url;
+            return defined( 'YITH_REFER_ID' ) ? $this->_premium_landing_url . '?refer_id=' . YITH_REFER_ID : $this->_premium_landing_url . '?refer_id=1030585';
         }
 
         /**
@@ -142,19 +142,10 @@ if( ! class_exists( 'YITH_WC_Category_Accordion' ) ){
                 return;
             }
 
-            $admin_tabs = array(
-                'settings'      => __( 'Settings', 'ywcca' ),
-            );
 
-           /* if( !defined( 'YWCCA_PREMIUM' ) )
+            if( !defined( 'YWCCA_PREMIUM' ) )
                 $admin_tabs['premium-landing'] = __( 'Premium Version', 'ywcca' );
-            else {
-                $admin_tabs['style1']  =   __('Style 1', 'ywcca');
-                $admin_tabs['style2']  =   __('Style 2', 'ywcca');
-                $admin_tabs['style3']  =   __('Style 3', 'ywcca');
-                $admin_tabs['style4']  =   __('Style 4', 'ywcca');
-             }
-            */
+
             $args = array(
                 'create_menu_page' => true,
                 'parent_slug'      => '',
@@ -180,8 +171,6 @@ if( ! class_exists( 'YITH_WC_Category_Accordion' ) ){
 
             wp_register_style( 'ywcca_accordion_style', YWCCA_ASSETS_URL .'css/ywcca_style.css' );
             wp_enqueue_style( 'ywcca_accordion_style' );
-
-          //  $suffix       = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
             wp_register_script( 'ywcca_accordion', YWCCA_ASSETS_URL .'js/ywcca_accordion.js', array('jquery'), '1.0.0', true );
             wp_enqueue_script( 'ywcca_accordion' );

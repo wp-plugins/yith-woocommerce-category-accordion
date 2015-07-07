@@ -61,11 +61,11 @@ if( !class_exists( 'YITH_Category_Accordion_Widget' ) )
         public function form( $instance ){
             $default    =   array(
                 'title'                 =>  '',
-                'show_wc_cat'           =>  get_option( 'ywcca_show_wc_category' )      == 'yes'  ? 'on' : 'off',
-                'show_wc_subcat'        =>  get_option( 'ywcca_show_wc_sub_category' )  == 'yes'  ? 'on' : 'off',
-                'show_wp_cat'           =>  get_option( 'ywcca_show_wp_category' )      == 'yes'  ? 'on' : 'off',
-                'show_wp_subcat'        =>  get_option( 'ywcca_show_wp_sub_category' )  == 'yes'  ? 'on' : 'off',
-                'highlight_curr_cat'    =>  get_option( 'ywcca_highlight_category' )    ==  'yes' ? 'on' : 'off'
+                'show_wc_cat'           =>  isset( $instance['show_wc_cat'] ) ? $instance['show_wc_cat'] : 'off',
+                'show_wc_subcat'        =>  isset( $instance['show_wc_subcat'] ) ? $instance['show_wc_subcat'] : 'off',
+                'show_wp_cat'           =>  isset( $instance['show_wp_cat'] ) ? $instance['show_wp_cat'] : 'off',
+                'show_wp_subcat'        =>  isset( $instance['show_wp_subcat'] ) ? $instance['show_wp_subcat']: 'off',
+                'highlight_curr_cat'    =>  isset( $instance['highlight_curr_cat'] ) ? $instance['highlight_curr_cat']: 'off'
             );
 
            $instance    =   wp_parse_args( $instance, $default );
@@ -75,7 +75,7 @@ if( !class_exists( 'YITH_Category_Accordion_Widget' ) )
                 <input class="widefat" type="text" id="<?php echo $this->get_field_id("title");?>" name="<?php echo $this->get_field_name("title");?>" placeholder="<?php _e('Insert a title for the accordion menu', 'ywcca');?>" value="<?php echo $instance['title'];?>">
             </p>
             <p>
-                <label for="<?php echo esc_attr( $this->get_field_id( 'show_wc_cat' ) );?>"><?php _e( 'Show WooCommerce Categories"','ywcca' );?></label>
+                <label for="<?php echo esc_attr( $this->get_field_id( 'show_wc_cat' ) );?>"><?php _e( 'Show WooCommerce Categories','ywcca' );?></label>
                 <input type="checkbox" <?php checked( 'on', $instance['show_wc_cat'] );?> id="<?php echo esc_attr( $this->get_field_id( 'show_wc_cat' ) );?>" name="<?php echo esc_attr( $this->get_field_name( 'show_wc_cat' ) );?>">
             </p>
             <p>
@@ -83,7 +83,7 @@ if( !class_exists( 'YITH_Category_Accordion_Widget' ) )
                 <input type="checkbox" <?php checked( 'on', $instance['show_wc_subcat'] );?> id="<?php echo esc_attr( $this->get_field_id( 'show_wc_subcat' ) );?>" name="<?php echo esc_attr( $this->get_field_name( 'show_wc_subcat' ) );?>">
             </p>
             <p>
-                <label for="<?php echo esc_attr( $this->get_field_id( 'show_wp_cat' ) );?>"><?php _e( 'Show WordPress Categories"','ywcca' );?></label>
+                <label for="<?php echo esc_attr( $this->get_field_id( 'show_wp_cat' ) );?>"><?php _e( 'Show WordPress Categories','ywcca' );?></label>
                 <input type="checkbox" <?php checked( 'on', $instance['show_wp_cat'] );?> id="<?php echo esc_attr( $this->get_field_id( 'show_wp_cat' ) );?>" name="<?php echo esc_attr( $this->get_field_name( 'show_wp_cat' ) );?>">
             </p>
             <p>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: YITH WooCommerce Category Accordion\n"
-"POT-Creation-Date: 2015-06-18 16:52+0100\n"
-"PO-Revision-Date: 2015-06-18 16:52+0100\n"
+"POT-Creation-Date: 2015-07-07 11:17+0100\n"
+"PO-Revision-Date: 2015-07-07 11:18+0100\n"
 "Last-Translator: \n"
 "Language-Team: Yithemes <plugins@yithemes.com>\n"
 "Language: en\n"
@@ -35,46 +35,47 @@ msgid "Insert a title for the accordion menu"
 msgstr ""
 
 #: ../includes/class.yith-category-accordion-widget.php:78
-msgid "Show WooCommerce Categories\""
+msgid "Show WooCommerce Categories"
 msgstr ""
 
 #: ../includes/class.yith-category-accordion-widget.php:82
-#: ../plugin-options/settings-options.php:42
 msgid "Show WooCommerce Subcategories"
 msgstr ""
 
 #: ../includes/class.yith-category-accordion-widget.php:86
-msgid "Show WordPress Categories\""
+msgid "Show WordPress Categories"
 msgstr ""
 
 #: ../includes/class.yith-category-accordion-widget.php:90
-#: ../plugin-options/settings-options.php:50
 msgid "Show WordPress Subcategories"
 msgstr ""
 
 #: ../includes/class.yith-category-accordion-widget.php:94
-#: ../plugin-options/settings-options.php:33
 msgid "Highlight the current category"
 msgstr ""
 
 #: ../includes/class.yith-woocommerce-category-accordion.php:70
-#: ../includes/class.yith-woocommerce-category-accordion.php:146
 msgid "Settings"
+msgstr ""
+
+#: ../includes/class.yith-woocommerce-category-accordion.php:73
+#: ../includes/class.yith-woocommerce-category-accordion.php:147
+msgid "Premium Version"
 msgstr ""
 
 #: ../includes/class.yith-woocommerce-category-accordion.php:98
 msgid "Plugin Documentation"
 msgstr ""
 
-#: ../includes/class.yith-woocommerce-category-accordion.php:161
-#: ../includes/class.yith-woocommerce-category-accordion.php:162
+#: ../includes/class.yith-woocommerce-category-accordion.php:152
+#: ../includes/class.yith-woocommerce-category-accordion.php:153
 msgid "Category Accordion"
 msgstr ""
 
 #: ../init.php:47
 msgid ""
 "YITH WooCommerce Category Accordion  is enabled but not effective. It "
-"requires Woocommerce in order to work."
+"requires WooCommerce in order to work."
 msgstr ""
 
 #: ../init.php:62
@@ -83,14 +84,96 @@ msgid ""
 "while you are using the premium one."
 msgstr ""
 
-#: ../plugin-options/settings-options.php:10
-msgid "General settings"
+#: ../templates/admin/premium.php:222 ../templates/admin/premium.php:332
+#, php-format
+msgid ""
+"Upgrade to %1$spremium version%2$s of %1$sYITH WooCommerce category Accordion"
+"%2$s to benefit from all features!"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:16
-msgid "Show WooCommerce categories in the accordion"
+#: ../templates/admin/premium.php:225 ../templates/admin/premium.php:335
+msgid "UPGRADE"
 msgstr ""
 
-#: ../plugin-options/settings-options.php:24
-msgid "Show WordPress categories in accordion"
+#: ../templates/admin/premium.php:226 ../templates/admin/premium.php:336
+msgid "to the premium version"
+msgstr ""
+
+#: ../templates/admin/premium.php:232
+msgid "Premium Features"
+msgstr ""
+
+#: ../templates/admin/premium.php:240
+msgid "Category and sublevels"
+msgstr ""
+
+#: ../templates/admin/premium.php:243
+#, php-format
+msgid ""
+"Set how many categories you want to show to your users if you don't want the "
+"system considers the whole list; and there's more!%3$sIf you have created a "
+"category hierarchic structure, with different subcategories of your site, "
+"with the %1$s\"Max depth level\"%2$s option you will be able to set the "
+"plugin to show only the categories of a specific hierarchic level."
+msgstr ""
+
+#: ../templates/admin/premium.php:253
+msgid "Tag and menu"
+msgstr ""
+
+#: ../templates/admin/premium.php:256
+#, php-format
+msgid ""
+"Not only categories: with the premium version of the plugin you can display "
+"in accordion all the %1$smenus%2$s of your site, in addition to the complete "
+"list of all %1$stags%2$s you have linked to the products of your shop. "
+msgstr ""
+
+#: ../templates/admin/premium.php:272
+msgid "4 styles"
+msgstr ""
+
+#: ../templates/admin/premium.php:275
+#, php-format
+msgid ""
+"Four different configurable styles that you can assign to the plugin's "
+"widgets and shortcodes. %1$sDon't touch the code and get your result "
+"directly from the panel%2$s"
+msgstr ""
+
+#: ../templates/admin/premium.php:285
+msgid "Shortcode"
+msgstr ""
+
+#: ../templates/admin/premium.php:288
+#, php-format
+msgid ""
+"Same widget features, same options, but much more freedom: %1$sadd your "
+"accordions%2$s everywhere with the shortcode. "
+msgstr ""
+
+#: ../templates/admin/premium.php:304
+msgid "Sorting"
+msgstr ""
+
+#: ../templates/admin/premium.php:307
+#, php-format
+msgid ""
+"A good management of the category list must give the freedom to choose the "
+"sorting system to show the category in the page.%3$sThree different options: "
+"by %1$sID, name%2$s or %1$snumber%2$s of assigned elements"
+msgstr ""
+
+#: ../templates/admin/premium.php:317
+msgid "Pages and posts"
+msgstr ""
+
+#: ../templates/admin/premium.php:320
+#, php-format
+msgid ""
+"For each widget or shortcode you set with the premium version of the plugin, "
+"you can select the pages and posts in which you don't want them to appear."
+"Moreover, the %1$s\"Hide empty\"%2$s option lets you decide to exclude the "
+"empty categories from the list, so there will be no categories without "
+"assigned elements."
 msgstr ""

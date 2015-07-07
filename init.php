@@ -41,15 +41,15 @@ if( !function_exists( 'is_plugin_active' ) ) {
 
 if( !function_exists( 'WC' ) ){
 
-    function yith_ywcca_install_woocommerce_admin_notice() {
+    function yith_ywcca_free_install_woocommerce_admin_notice() {
         ?>
         <div class="error">
-            <p><?php _e( 'YITH WooCommerce Category Accordion  is enabled but not effective. It requires Woocommerce in order to work.', 'ywcca' ); ?></p>
+            <p><?php _e( 'YITH WooCommerce Category Accordion  is enabled but not effective. It requires WooCommerce in order to work.', 'ywcca' ); ?></p>
         </div>
     <?php
     }
 
-    add_action( 'admin_notices', 'yith_ywcca_install_woocommerce_admin_notice' );
+    add_action( 'admin_notices', 'yith_ywcca_free_install_woocommerce_admin_notice' );
 
     deactivate_plugins( plugin_basename( __FILE__ ) );
     return;
