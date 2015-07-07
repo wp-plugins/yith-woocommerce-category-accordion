@@ -76,7 +76,7 @@ if ( !function_exists( 'yith_plugin_registration_hook' ) ) {
 register_activation_hook( __FILE__, 'yith_plugin_registration_hook' );
 
 if ( !defined( 'YWCCA_VERSION' ) ) {
-    define( 'YWCCA_VERSION', '1.0.0' );
+    define( 'YWCCA_VERSION', '1.0.1' );
 }
 
 if ( !defined( 'YWCCA_FREE_INIT' ) ) {
