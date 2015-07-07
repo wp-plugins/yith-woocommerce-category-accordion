@@ -3,7 +3,7 @@
  * Plugin Name: YITH WooCommerce Category Accordion
  * Plugin URI: http://yithemes.com/themes/plugins/yith-woocommerce-category-accordion/
  * Description: YITH WooCommerce Category Accordion allows you to add accordion menu in your pages.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: YIThemes
  * Author URI: http://yithemes.com/
  * Text Domain: ywcca
@@ -11,7 +11,7 @@
  *
  * @author Your Inspiration Themes
  * @package YITH WooCommerce Category Accordion
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 /*  Copyright 2013  Your Inspiration Themes  (email : plugins@yithemes.com)
